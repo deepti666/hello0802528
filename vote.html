@@ -1,0 +1,72 @@
+<html>
+<head>
+<style>
+div {
+ border: 2px solid black;
+  background-color: lightblue;
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+}
+
+
+#demo{
+float:left;
+}
+
+#demo1{
+float:right;
+}
+
+
+</style>
+<script type="text/javascript">
+var voteA=0;
+var voteB=0;
+
+function votecondidateA(){
+voteA=voteA+1;
+document.getElementById('vote1').innerHTML="Result of vote A";
+document.getElementById('vote').innerHTML=voteA
+}
+
+function votecondidateB(){
+voteB=voteB+1;
+document.getElementById('demo1').innerHTML="Result of vote B";
+document.getElementById('demo').innerHTML=voteB;
+}
+</script>
+</head>
+<body>
+<p id="vote1"></p>
+<p id="vote">0</p>
+<p id="demo1"></p>
+<p id="demo">0</p>
+<h1 Align=center>voting</h1>
+<div>
+
+<div id="demo">
+<br>
+<button type="button" onclick="votecondidateA();">Vote A</button>
+</br>
+<br>
+<img src="katreina.jpg">
+</br>
+</div>
+<div id="demo1">
+<br>
+<button type="button" onclick="votecondidateB();">Vote B</button>
+</br>
+<br>
+<img src="sarukh.jpg">
+</br>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
